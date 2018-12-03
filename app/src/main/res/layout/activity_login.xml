@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/water">
 
     <LinearLayout
         android:layout_centerHorizontal = "true"
@@ -51,6 +52,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-        android:text="Fish Tank Helper Log In" />
+        android:text="Fish Tank Helper Log In"
+        android:textStyle="bold"
+        tools:textSize="24sp" />
 
 </RelativeLayout>
