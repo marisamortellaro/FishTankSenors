@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".MainActivity">
-
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_centerHorizontal = "true"
@@ -32,14 +30,14 @@
 
         <Button
             android:layout_margin="15dp"
-            android:id= "@+id/buttonRegister"
-            android:text = "Register User"
+            android:id= "@+id/buttonSignIn"
+            android:text = "Sign In"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <TextView
             android:textAlignment="center"
-            android:text="Already registered? Sign in Here"
-            android:id="@+id/textViewSignin"
+            android:text="Not registered? Sign up Here"
+            android:id="@+id/textViewSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -47,13 +45,12 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        android:text="Register for Fish Tank Helper" />
-
+        android:layout_marginTop="65dp"
+        android:text="Fish Tank Helper Log In" />
 
 </RelativeLayout>
