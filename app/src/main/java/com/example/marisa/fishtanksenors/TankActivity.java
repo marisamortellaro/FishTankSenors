@@ -4,23 +4,21 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class TankActivity extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth firebaseAuth;
     private TextView textViewUserEmail;
-    private Button buttonLogout;
-    private TextView textViewTank1;
+    private TextView textViewTankActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_tank);
 
         firebaseAuth = FirebaseAuth.getInstance();
         if(firebaseAuth.getCurrentUser() == null)
@@ -35,26 +33,18 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
         textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
         textViewUserEmail.setText("Welcome " + user.getEmail());
-        buttonLogout = (Button) findViewById(R.id.buttonLogout);
-        textViewTank1 = (TextView) findViewById(R.id.textViewTankOne);
+        textViewTankActivity = (TextView) findViewById(R.id.textViewBack);
 
-        buttonLogout.setOnClickListener(this);
-        textViewTank1.setOnClickListener(this);
+        textViewTankActivity.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View view) {
-        if(view == buttonLogout)
-        {
-            firebaseAuth.signOut();
-            finish();
-            startActivity(new Intent(this, LoginActivity.class));
-        }
-        if(view == textViewTank1)
+    public void onClick(View view)
+    {
+        if(view == textViewTankActivity)
         {
             finish();
-            startActivity(new Intent(this, TankActivity.class));
+            startActivity(new Intent(this, ProfileActivity.class));
         }
-
     }
 }

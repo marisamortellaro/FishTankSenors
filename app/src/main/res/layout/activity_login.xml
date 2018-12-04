@@ -53,6 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
         android:text="Fish Tank Helper Log In"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         tools:textSize="24sp" />
 

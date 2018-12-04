@@ -55,6 +55,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
         android:text="Register for Fish Tank Helper"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
         android:textStyle="bold"
         tools:textSize="24sp" />
 

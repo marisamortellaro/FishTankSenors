@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TankActivity"
+    android:background="@drawable/water">
+
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="TextViewUserEmail"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp"
+        android:text="Tank One"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        android:textStyle="bold"
+        tools:textSize="24sp"  />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:text="Current pH:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+
+        tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="-1dp"
+        android:text="7.5"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        android:textStyle="bold"
+        tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="191dp"
+        android:text="Current Temperature:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
+        android:text="75"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        android:textStyle="bold"
+        tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:text="Go back to viewing your tanks" />
+</RelativeLayout>
